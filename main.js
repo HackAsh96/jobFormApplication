@@ -31,21 +31,21 @@ document.querySelector('#submitBtn').addEventListener('click',()=>{
   const personalities= new Personality(true,true,true);
   const candidateForm= new Candidate(nameInput,titleInput,skills(),getCandPersonality(personalities),myLanguages());
 
-function skills(){
-  if(jsInput.checked===true&&cssInput.checked===true&&htmlInput.checked==true)
-  return [jsInput.name,cssInput.name,htmlInput.name];
-  else return []
-}
-function getCandPersonality(humor){
-  if(fastInput.checked===true||curInput.checked===true||indInput.checked===true) return humor
-  else return []
-}
-function myLanguages(){
-  if(engInput.checked===true&&danInput.checked==true) return [engInput.name,danInput.name]
-  else if(engInput.checked===true) return engInput.name
-  else if(danInput.checked===true) return danInput.name
-  else return []
-}
+  function skills(){
+    if(jsInput.checked===true&&cssInput.checked===true&&htmlInput.checked==true)
+    return [jsInput.name,cssInput.name,htmlInput.name];
+    else return []
+  }
+  function getCandPersonality(humor){
+    if(fastInput.checked===true||curInput.checked===true||indInput.checked===true) return humor
+    else return []
+  }
+  function myLanguages(){
+    if(engInput.checked===true&&danInput.checked==true) return [engInput.name,danInput.name]
+    else if(engInput.checked===true) return engInput.name
+    else if(danInput.checked===true) return danInput.name
+    else return []
+  }
   const send_application=function(applicant,url){
     console.log(applicant);
     console.log(url);

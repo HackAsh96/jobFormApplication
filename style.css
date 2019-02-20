@@ -62,7 +62,7 @@ span{
   font-weight: bold;
 }
 #submitBtn:hover{
-cursor: pointer;
+  cursor: pointer;
 }
 #nameInput, #titleInput{
   outline: none;
