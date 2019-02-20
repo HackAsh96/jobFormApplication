@@ -6,11 +6,20 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+div{
+  padding: 20px;
+}
 #container{
   border: solid 1px ;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   display: inline-flex;
   flex-direction: column;
+}
+.star{
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: oblique;
+  margin-left: 10px;
 }
 #userDetail{
   background: rgb(202, 226, 241);
